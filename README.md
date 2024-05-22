@@ -9,12 +9,12 @@ Next.js 프로젝트를 생성할 때 반복적으로 설정이 필요한 과정
 - TailwindCSS
 - Prettier
 - Jest
-- Storybook
+- ~~Storybook~~
 - eslint
     - eslint-config-next
     - eslint-plugin-prettier
     - eslint-config-prettier
-    - eslint-plugin-storybook
+    - ~~eslint-plugin-storybook~~
 
 
 ## Next.js 프로젝트 만들기
@@ -244,3 +244,7 @@ const config = {
 module.exports = createJestConfig(config);
 
 ```
+
+## Storybook
+
+작성 중
