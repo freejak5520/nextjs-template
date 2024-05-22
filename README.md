@@ -102,17 +102,17 @@ tsconfig.json에 권장 설정을 적용합니다.
 
 tsc 명령어를 자주 사용하기 때문에 스크립트에 추가합니다.
 
-```json
+```jsonc
 {
-	...
+  // ...
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "tsc": "tsc" # Add tsc script
+    "tsc": "tsc" // Add tsc script
   },
-  ...
+  // ...
 }
 
 ```
@@ -174,7 +174,7 @@ VS Code 설정
 - ESLint 확장 설치
 - 설정에 아래 내용 추가해서 저장 시 format on save 적용
 
-```json
+```jsonc
 {
   // ...
   "[javascript]": {
