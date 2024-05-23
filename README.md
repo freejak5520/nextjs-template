@@ -17,7 +17,7 @@ Next.js 프로젝트를 생성할 때 반복적으로 설정이 필요한 과정
     - ~~eslint-plugin-storybook~~
 
 
-## Next.js 프로젝트 만들기
+## 1. Next.js 프로젝트 만들기
 
 명령어 입력
 
@@ -46,7 +46,7 @@ npm run dev
 
 http://localhost:3000/ 로 접속
 
-## TS Config 적용
+## 2. TS Config 적용
 
 tsconfig.json에 권장 설정을 적용합니다.
 
@@ -98,7 +98,7 @@ tsconfig.json에 권장 설정을 적용합니다.
 }
 ```
 
-## tsc 스크립트 추가
+## 3. tsc 스크립트 추가
 
 tsc 명령어를 자주 사용하기 때문에 스크립트에 추가합니다.
 
@@ -123,7 +123,7 @@ tsc 명령어를 자주 사용하기 때문에 스크립트에 추가합니다.
 npm run tsc -- -w
 ```
 
-## Prettier
+## 4. Prettier
 
 Prettier와 관련 플러그인을 설치하고 rule 설정을 통해 save 시 자동 포매팅을 적용합니다.
 
@@ -203,7 +203,7 @@ VS Code 설정
 
 JavaScript, TypeScript 외 파일들은 VS Code Prettier 확장을 사용해 적용합니다.
 
-## Jest
+## 5. Jest
 
 https://nextjs.org/docs/app/building-your-application/testing/jest
 
@@ -245,6 +245,46 @@ module.exports = createJestConfig(config);
 
 ```
 
-## Storybook
+## 6. Storybook
 
-작성 중
+https://storybook.js.org/docs/get-started
+
+### Install
+
+```bash
+npx storybook@latest init
+```
+
+npm 사용할 경우 corepack 비활성화
+
+```bash
+corepack disable
+```
+
+`.storybook/preview.ts` TailwindCSS 추가
+
+```tsx
+import "@/app/globals.css"
+```
+
+### 사용하지 않는 애드온 및 예제 파일 제거
+
+package.json 에서 제거
+
+```jsonc
+  "@chromatic-com/storybook": "^1.4.0",
+  "@storybook/addon-onboarding": "^8.1.3",
+  "@storybook/addon-links": "^8.1.3",
+  // ...
+  "packageManager": "pnpm@9.1.2+sha512.127dc83b9ea10c32be65d22a8efb4a65fb952e8fefbdfded39bdc3c97efc32d31b48b00420df2c1187ace28c921c902f0cb5a134a4d032b8b5295cbfa2c681e2"
+```
+
+.storybook/main.ts 에서 애드온 제거
+
+```
+"@storybook/addon-onboarding",
+"@storybook/addon-links",
+"@chromatic-com/storybook",
+```
+
+`src/stories` 디렉토리 제거
