@@ -9,12 +9,12 @@ Next.js 프로젝트를 생성할 때 반복적으로 설정이 필요한 과정
 - TailwindCSS
 - Prettier
 - Jest
-- ~~Storybook~~
+- Storybook
 - eslint
     - eslint-config-next
     - eslint-plugin-prettier
     - eslint-config-prettier
-    - ~~eslint-plugin-storybook~~
+    - eslint-plugin-storybook
 
 
 ## 1. Next.js 프로젝트 만들기
