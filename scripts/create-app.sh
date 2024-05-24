@@ -19,11 +19,12 @@ PROJECT_DIR=$(pwd)
 
 npm install -D prettier eslint-config-prettier eslint-plugin-prettier prettier-plugin-tailwindcss
 npm install -D jest jest-environment-jsdom @testing-library/react @testing-library/jest-dom @types/jest
-npx storybook@latest init
 
 cp "$BASEDIR/root/tsconfig.json" "$PROJECT_DIR/tsconfig.json"
 cp "$BASEDIR/root/.prettierrc" "$PROJECT_DIR/.prettierrc"
 cp "$BASEDIR/root/.eslintrc.json" "$PROJECT_DIR/.eslintrc.json"
 cp "$BASEDIR/root/jest.config.js" "$PROJECT_DIR/jest.config.js"
+
+npx storybook@latest init
 
 echo "Project creation is complete."
