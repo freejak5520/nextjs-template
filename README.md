@@ -245,12 +245,6 @@ https://storybook.js.org/docs/get-started
 npx storybook@latest init
 ```
 
-npm 사용할 경우 corepack 비활성화
-
-```bash
-corepack disable
-```
-
 `.storybook/preview.ts` TailwindCSS 추가
 
 ```tsx
@@ -265,8 +259,6 @@ package.json 에서 제거
   "@chromatic-com/storybook": "^1.4.0",
   "@storybook/addon-onboarding": "^8.1.3",
   "@storybook/addon-links": "^8.1.3",
-  // ...
-  "packageManager": "pnpm@9.1.2+sha512.127dc83b9ea10c32be65d22a8efb4a65fb952e8fefbdfded39bdc3c97efc32d31b48b00420df2c1187ace28c921c902f0cb5a134a4d032b8b5295cbfa2c681e2"
 ```
 
 .storybook/main.ts 에서 애드온 제거
