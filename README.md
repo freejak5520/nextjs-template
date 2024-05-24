@@ -19,23 +19,13 @@ Next.js 프로젝트를 생성할 때 반복적으로 설정이 필요한 과정
 
 ## 1. Next.js 프로젝트 만들기
 
-명령어 입력
+`create-next-app`을 사용해서 프로젝트 생성
 
 ```bash
-npx create-next-app@latest
-```
+# npx create-next-app@latest <project-directory> --ts --tailwind --eslint --app --src-dir --use-npm --no-import-alias
+npx create-next-app@latest nextjs-template --ts --tailwind --eslint --app --src-dir --use-npm --no-import-alias
 
-프로젝트 이름 및 기본 설정 선택
-
-```
-✔ What is your project named? … nextjs-template
-✔ Would you like to use TypeScript? … Yes
-✔ Would you like to use ESLint? … Yes
-✔ Would you like to use Tailwind CSS? … Yes
-✔ Would you like to use `src/` directory? … Yes
-✔ Would you like to use App Router? (recommended) … Yes
-✔ Would you like to customize the default import alias (@/*)? … No
-Creating a new Next.js app in /Users/jake/Developments/Projects/nextjs/nextjs-template.
+cd nextjs-template
 ```
 
 개발 서버 실행
