@@ -4,17 +4,17 @@ Next.js 프로젝트를 생성할 때 반복적으로 설정이 필요한 과정
 
 아래의 라이브러리, 프레임워크가 포함되어 있습니다.
 
-- Next.js
-- TypeScript
-- TailwindCSS
-- Prettier
-- Jest
-- Storybook
-- eslint
-    - eslint-config-next
-    - eslint-plugin-prettier
-    - eslint-config-prettier
-    - eslint-plugin-storybook
+- Next.js:       14.2.3
+- TypeScript:    ^5
+- TailwindCSS:   ^3.4.1
+- Prettier:      ^8
+- Jest:          ^29.7.0
+- Storybook:     ^8.1.3
+- eslint:        ^8
+    - eslint-config-next:       14.2.3
+    - eslint-plugin-prettier:   ^5.1.3
+    - eslint-config-prettier:   ^9.1.0
+    - eslint-plugin-storybook:  ^0.8.0
 
 
 ## 1. Next.js 프로젝트 만들기
